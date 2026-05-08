@@ -35,7 +35,7 @@ let hidepages =()=>{
 let importdata = ()=>{
     let text = document.querySelector(".text");
 
-    return fetch("../data.json").then(req=>req.json())
+    return fetch("data.json").then(req=>req.json())
     .then(diff=>{
         let increment = all.stag[all.level];
         let current = diff[all.level][increment]["text"] ;
