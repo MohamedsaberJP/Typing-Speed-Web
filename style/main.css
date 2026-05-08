@@ -1,0 +1,272 @@
+/* global rules */
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: #121212;
+    padding-bottom: 10px;
+    height: calc(100vh - 20px);
+    font-family: sans-serif;
+}
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 1000px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+    }
+}
+button {
+    cursor: pointer;
+}
+
+
+/* start body  */
+/* start testing page */
+.testing-page{
+    text-align: center;
+    background-color: hsl(0, 0%, 7%);
+    color: white;
+    padding: 20px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding-bottom: 20px;
+}
+.head .personal-best{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    border-bottom: 2px solid #888;
+}
+
+.nav .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.nav .props span span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.levels .level ,
+.info .mode span{
+    border: 1px solid #888;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.levels .level:hover ,
+.info .mode span:hover{
+    color: blue;
+    border-color: blue;
+}
+
+.testing-page .text{
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.testing-page .main-part {
+    position: relative;
+    min-height: 370px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    font-size: 18px;
+}
+.testing-page .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 5;
+}
+
+
+.testing-page .cover .start_test{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+.testing-page .cover .start_test button{
+    background-color: hsl(214, 100%, 55%);
+    color: white;
+}
+.testing-page .cover .start_test p{
+    margin-top: 0;
+}
+.testing-page .start_test svg{
+    margin-left: 5px;
+}
+
+
+/* restart btn  */
+.restart {
+    display: none;
+    border-top: 2px solid #888;
+}
+.restart button{
+    background-color: #262626;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    
+}
+
+
+/* high score page */
+
+.normal-result ,
+.high-score ,
+.first-test {
+    text-align: center;
+    background-color: hsl(0, 0%, 7%);
+    color: white;
+    position: relative;
+    margin-top: -25px;
+}
+.normal-result h3,
+.high-score h3,
+.first-test h3{
+    margin: 0;
+    font-size: 22px;
+}
+.normal-result .box span,
+.high-score .box span,
+.first-test .box span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.container > svg:nth-of-type(2){
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+.box {
+    display: inline-flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box p{
+    border: 1px solid #888;
+    padding: 11px 22px;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.box .wpm-result,
+.box .accuracy-result{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.part3 {
+    position: relative;
+    margin-bottom: 20px;
+}
+button svg{
+    margin-left: 10px;
+}
+
+.high-score .part3 > svg{
+    max-width: 100%;
+    margin-top: -25px;
+}
+.normal-result .part3  > svg{
+    margin-left: 5px;
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* framework */
+.text-white{
+    color: white;
+}
+.text-gray{
+    color: #888;
+}
+.btn{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    margin: 0 auto;
+}
+
+.btn p {
+    margin: 0;
+}
+.border-radius {
+    border-radius: 6px;
+}
+.active-case{
+    color: blue;
+    border:1px solid blue !important ;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+    justify-content: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
